@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="郭浪">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/2024/09/22/unocss学习总结/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+    
+    
+        
+        <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UnoCSS学习总结">
+<meta property="og:url" content="http://example.com/2024/09/22/UnoCSS%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/redefine-og.webp">
+<meta property="article:published_time" content="2024-09-22T13:46:34.000Z">
+<meta property="article:modified_time" content="2024-09-22T13:46:34.000Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="UnoCSS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/redefine-og.webp">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/redefine-favicon.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/redefine-favicon.svg">
+    <meta name="theme-color" content="#20D1C6">
+    <link rel="shortcut icon" href="/images/redefine-favicon.svg">
+    <!--- Page Info-->
+    
+    <title>
+        
+            UnoCSS学习总结 | GuoLang
+        
+    </title>
+
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/css/build/tailwind.css">
+
+    
+
+    
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
+
+    
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
+
+    <!--- Font Part-->
+    
+    
+    
+    
+    
+    
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"example.com","root":"/","language":"zh-CN"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"delete_mask":false,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"pangu_js":false,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#20D1C6","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"90%","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"open_graph":{"enable":true,"image":"/images/redefine-og.webp","description":"Hexo Theme Redefine, Redefine Your Hexo Journey."},"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/5.jpg","dark":"/images/1.jpg"},"title":"微韵小筑","subtitle":{"text":["我见青山多妩媚，料青山见我应如是 ——辛弃疾《贺新郎·甚矣吾衰矣》","醉后不知天在水，满船清梦压星河 ——唐温如《题龙阳县青草湖》","月落乌啼霜满天，江枫渔火对愁眠 ——张继《枫桥夜泊》"],"hitokoto":{"enable":false,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"11.4.1"}},"version":"2.8.2","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"85%","pages":"85%"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Tags":{"path":"/tags/","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories/","icon":"fas fa-bookmark"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"right","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":150,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2023/8/17 11:45:14"};
+    window.lang_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+    window.data = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+
+<body>
+	<div class="progress-bar-container">
+	
+
+	
+	<span class="pjax-progress-bar"></span>
+	<!--        <span class="swup-progress-icon">-->
+	<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+	<!--        </span>-->
+	
+</div>
+
+<main class="page-container" id="swup">
+
+	
+
+	<div class="main-content-container flex flex-col justify-between min-h-dvh">
+		<div class="main-content-header">
+			<header class="navbar-container px-6 md:px-12">
+    <div class="navbar-content transition-navbar ">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                GuoLang
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    首页
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/tags/"
+                                        >
+                                    <i class="fa-regular fa-tags fa-fw"></i>
+                                    标签
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/categories/"
+                                        >
+                                    <i class="fas fa-bookmark fa-fw"></i>
+                                    分类
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-dvh w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/"
+                        >
+                            <span>
+                                首页
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/tags/"
+                        >
+                            <span>
+                                标签
+                            </span>
+                            
+                                <i class="fa-regular fa-tags fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/categories/"
+                        >
+                            <span>
+                                分类
+                            </span>
+                            
+                                <i class="fas fa-bookmark fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+
+            
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">17</div>
+        <div class="label text-third-text-color text-sm">标签</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
+        <div class="label text-third-text-color text-sm">分类</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">19</div>
+        <div class="label text-third-text-color text-sm">文章</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+		</div>
+
+		<div class="main-content-body transition-fade-up">
+			
+
+			<div class="main-content">
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
+
+		<div class="article-title relative w-full">
+			
+			<div class="w-full flex items-center pt-6 justify-start">
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">UnoCSS学习总结</h1>
+			</div>
+			
+		</div>
+
+		
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			<div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+				<img src="/images/avatar.jpg">
+			</div>
+			<div class="info flex flex-col justify-between">
+				<div class="author flex items-center">
+					<span class="name text-default-text-color text-lg font-semibold">郭浪</span>
+					
+					<span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv3</span>
+					
+				</div>
+				<div class="meta-info">
+					<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-09-22 21:46:34</span>
+        <span class="mobile">2024-09-22 21:46:34</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-09-22 21:46:34</span>
+            <span class="mobile">2024-09-22 21:46:34</span>
+            <span class="hover-info">更新</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E6%97%A5%E5%B8%B8%E5%AD%A6%E4%B9%A0/">日常学习</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/UnoCSS/">UnoCSS</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+				</div>
+			</div>
+		</div>
+		
+
+		
+
+
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<h2 id="✨-为什么开始用-UnoCSS？"><a href="#✨-为什么开始用-UnoCSS？" class="headerlink" title="✨ 为什么开始用 UnoCSS？"></a>✨ 为什么开始用 UnoCSS？</h2><p>在参与一个大屏项目的时候，页面上的元素特别多，各种图表、地图、动画，样式堆得一大坨。最开始我还是用传统的写法 —— scss 和 className 去管理样式，后来越写越发现：</p>
+<ul>
+<li>样式文件越来越臃肿，重复代码一大堆；</li>
+<li>改动个样式还得切来切去，看着都烦；</li>
+<li>一套样式写完发现页面构建出来好几百 KB，太不优雅了。</li>
+</ul>
+<p>然后我就开始琢磨是不是该找个更轻便的解决方案，在和组长的商量的时候发现了 <strong>UnoCSS</strong> 这个工具。</p>
+<p>它主打的是「即时原子化」，也就是说你写什么类名它就生成什么样式，像 <code>text-18px</code>、<code>bg-#123456</code> 这样的类名直接写上去就能用，根本不需要提前写在 CSS 文件里，省事多了！</p>
+<p>用上 UnoCSS 之后，开发节奏真的变快了，而且打包出来的 CSS 大大缩小，整个项目都轻快不少。后面我还专门研究了下 Uno 的 preset 和规则系统，越用越顺手。</p>
+<h2 id="📌-什么是-UnoCSS？"><a href="#📌-什么是-UnoCSS？" class="headerlink" title="📌 什么是 UnoCSS？"></a>📌 什么是 UnoCSS？</h2><p>UnoCSS 是一款<strong>即时按需原子化 CSS 引擎</strong>，由 <a class="link"   target="_blank" rel="noopener" href="https://github.com/antfu" >Anthony Fu<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 开发。不同于传统 CSS 框架（如 TailwindCSS），UnoCSS 不需要扫描类名生成预构建的 CSS 文件，而是 <strong>按需实时生成样式规则</strong>，具有更强的灵活性和性能表现。</p>
+<p>它属于“原子化 CSS”的范畴，但提供了更强的<strong>规则配置能力、插件机制和构建优化支持</strong>。</p>
+<h2 id="✨-核心优势"><a href="#✨-核心优势" class="headerlink" title="✨ 核心优势"></a>✨ 核心优势</h2><ul>
+<li><strong>按需生成样式（On-demand）</strong>：不生成未使用的类，零冗余。</li>
+<li><strong>极速启动与构建</strong>：几乎不需要扫描文件，速度极快。</li>
+<li><strong>极致灵活</strong>：可以自定义规则、变体、快捷方式（shortcuts）等。</li>
+<li><strong>完整兼容 Tailwind 原子类名</strong>，并支持 WindiCSS、Bootstrap 等风格。</li>
+<li><strong>支持 Vue &#x2F; React &#x2F; Svelte &#x2F; Vite &#x2F; Nuxt 等主流框架</strong>。</li>
+</ul>
+<h2 id="🚀-安装与配置"><a href="#🚀-安装与配置" class="headerlink" title="🚀 安装与配置"></a>🚀 安装与配置</h2><h3 id="1-安装依赖（以-Vite-项目为例）"><a href="#1-安装依赖（以-Vite-项目为例）" class="headerlink" title="1. 安装依赖（以 Vite 项目为例）"></a>1. 安装依赖（以 Vite 项目为例）</h3><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install unocss -D</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="2-添加插件到-vite-config-ts"><a href="#2-添加插件到-vite-config-ts" class="headerlink" title="2. 添加插件到 vite.config.ts"></a>2. 添加插件到 <code>vite.config.ts</code></h3><div class="code-container" data-rel="Javascript"><figure class="iseeu highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">UnoCSS</span> <span class="keyword">from</span> <span class="string">&#x27;unocss/vite&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="attr">plugins</span>: [<span class="title class_">UnoCSS</span>()]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="3-创建-uno-config-ts"><a href="#3-创建-uno-config-ts" class="headerlink" title="3. 创建 uno.config.ts"></a>3. 创建 <code>uno.config.ts</code></h3><div class="code-container" data-rel="Javascript"><figure class="iseeu highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; defineConfig, presetUno, presetAttributify &#125; <span class="keyword">from</span> <span class="string">&#x27;unocss&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title function_">defineConfig</span>(&#123;</span><br><span class="line">  <span class="attr">presets</span>: [</span><br><span class="line">    <span class="title function_">presetUno</span>(),           <span class="comment">// 默认预设</span></span><br><span class="line">    <span class="title function_">presetAttributify</span>()    <span class="comment">// 支持属性语法</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">shortcuts</span>: &#123;</span><br><span class="line">    <span class="string">&#x27;btn&#x27;</span>: <span class="string">&#x27;px-4 py-1 rounded bg-blue-500 text-white hover:bg-blue-600&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></div>
+
+
+<h2 id="🔧-常用语法示例"><a href="#🔧-常用语法示例" class="headerlink" title="🔧 常用语法示例"></a>🔧 常用语法示例</h2><h3 id="原子类写法（和-Tailwind-类似）"><a href="#原子类写法（和-Tailwind-类似）" class="headerlink" title="原子类写法（和 Tailwind 类似）"></a>原子类写法（和 Tailwind 类似）</h3><div class="code-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;text-lg font-bold text-center text-red-500 hover:text-red-700&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="属性语法（需要-presetAttributify）"><a href="#属性语法（需要-presetAttributify）" class="headerlink" title="属性语法（需要 presetAttributify）"></a>属性语法（需要 presetAttributify）</h3><div class="code-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">text</span>=<span class="string">&quot;center red-500 hover:red-700&quot;</span> <span class="attr">font</span>=<span class="string">&quot;bold&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="自定义快捷方式（shortcuts）"><a href="#自定义快捷方式（shortcuts）" class="headerlink" title="自定义快捷方式（shortcuts）"></a>自定义快捷方式（shortcuts）</h3><div class="code-container" data-rel="Javascript"><figure class="iseeu highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">shortcuts</span>: &#123;</span><br><span class="line">  <span class="string">&#x27;card&#x27;</span>: <span class="string">&#x27;p-4 rounded shadow bg-white&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;btn&#x27;</span>: <span class="string">&#x27;px-4 py-2 rounded bg-primary text-white hover:bg-primary-dark&#x27;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="响应式与伪类支持"><a href="#响应式与伪类支持" class="headerlink" title="响应式与伪类支持"></a>响应式与伪类支持</h3><div class="code-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;md:hover:bg-blue-100 dark:bg-gray-800&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+
+<h2 id="🧠-使用心得与场景"><a href="#🧠-使用心得与场景" class="headerlink" title="🧠 使用心得与场景"></a>🧠 使用心得与场景</h2><p>在我参与的项目中，部分项目使用了 UnoCSS 来提升样式维护效率。我的实际体会包括：</p>
+<ul>
+<li><strong>开发体验丝滑</strong>：无需手写样式，所有样式通过类名组合完成。</li>
+<li><strong>调试更高效</strong>：类名即样式，查看结构即可理解样式含义。</li>
+<li><strong>项目体积更小</strong>：构建后只包含实际使用的样式类。</li>
+<li><strong>可读性略差</strong>：对于不熟悉原子化命名规则的新手存在一定门槛。</li>
+<li><strong>建议搭配 VSCode 插件</strong>使用，如 <code>UnoCSS IntelliSense</code>，提升补全体验。</li>
+</ul>
+<h2 id="📦-常见问题"><a href="#📦-常见问题" class="headerlink" title="📦 常见问题"></a>📦 常见问题</h2><h3 id="Q1：为什么我添加的类没有生效？"><a href="#Q1：为什么我添加的类没有生效？" class="headerlink" title="Q1：为什么我添加的类没有生效？"></a>Q1：为什么我添加的类没有生效？</h3><blockquote>
+<p>可能是没有正确安装 UnoCSS 插件，或类名拼写错误、写在了不被识别的文件中。</p>
+</blockquote>
+<h3 id="Q2：如何添加自定义颜色或字体？"><a href="#Q2：如何添加自定义颜色或字体？" class="headerlink" title="Q2：如何添加自定义颜色或字体？"></a>Q2：如何添加自定义颜色或字体？</h3><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">theme: &#123;</span><br><span class="line">  colors: &#123;</span><br><span class="line">    primary: &#x27;#3b82f6&#x27;,</span><br><span class="line">    secondary: &#x27;#64748b&#x27;</span><br><span class="line">  &#125;,</span><br><span class="line">  fontFamily: &#123;</span><br><span class="line">    sans: &#x27;Inter, sans-serif&#x27;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="Q3：和-Tailwind-CSS-相比如何选择？"><a href="#Q3：和-Tailwind-CSS-相比如何选择？" class="headerlink" title="Q3：和 Tailwind CSS 相比如何选择？"></a>Q3：和 Tailwind CSS 相比如何选择？</h3><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>UnoCSS</th>
+<th>TailwindCSS</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>启动性能</td>
+<td>🚀 极速</td>
+<td>中等（需预编译）</td>
+</tr>
+<tr>
+<td>配置灵活性</td>
+<td>✅ 极高</td>
+<td>中等（受限于配置结构）</td>
+</tr>
+<tr>
+<td>社区生态</td>
+<td>👶 成长中</td>
+<td>🌳 成熟强大</td>
+</tr>
+<tr>
+<td>插件支持</td>
+<td>✅ 丰富</td>
+<td>✅ 丰富</td>
+</tr>
+</tbody></table>
+<h2 id="🔚-总结"><a href="#🔚-总结" class="headerlink" title="🔚 总结"></a>🔚 总结</h2><p>总的来说，UnoCSS 真的是个“用过就回不去”的工具，特别适合像我这种既想写得快又不想牺牲页面性能的前端选手。它不光让样式开发变得更“即时”，还减少了很多重复劳动，页面打包出来也轻很多。</p>
+<p>如果你之前用过 TailwindCSS，那你上手 UnoCSS 基本没门槛；如果你还没用过类似原子化框架，那 Uno 就是一个非常不错的起点，配置自由、体验也好，完全能成为你项目里的主力样式解决方案。</p>
+<p>后续我准备在小程序和中后台项目里也都用上 UnoCSS，配合 preset 和自定义规则，写起来就像搭乐高一样随心所欲还挺好玩 🤓。</p>
+<h2 id="📚-推荐资源"><a href="#📚-推荐资源" class="headerlink" title="📚 推荐资源"></a>📚 推荐资源</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://unocss.dev/" >UnoCSS 官方文档<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/unocss/unocss" >UnoCSS GitHub 仓库<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://antfu.me/" >Antfu 的博客与作品集<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
+</ul>
+
+		</div>
+
+		
+		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+			<div class="article-copyright-info-container">
+    <ul>
+        <li><strong>标题:</strong> UnoCSS学习总结</li>
+        <li><strong>作者:</strong> 郭浪</li>
+        <li><strong>创建于
+                :</strong> 2024-09-22 21:46:34</li>
+        
+            <li>
+                <strong>更新于
+                    :</strong> 2024-09-22 21:46:34
+            </li>
+        
+        <li>
+            <strong>链接:</strong> https://guolang.top/2024/09/22/UnoCSS学习总结/
+        </li>
+        <li>
+            <strong>
+                版权声明:
+            </strong>
+            
+
+            
+                本文章采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a> 进行许可。
+            
+        </li>
+    </ul>
+</div>
+
+		</div>
+		
+
+		
+		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/UnoCSS/">#UnoCSS</a>&nbsp;
+			</li>
+			
+		</ul>
+		
+
+		
+
+		
+		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+			
+			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="prev" rel="prev" href="/2024/11/09/jQuery%E7%9A%84%E6%80%BB%E7%BB%93/">
+					<span class="left arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-left"></i>
+					</span>
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item">jQuery的总结</span>
+						<span class="post-nav-item">上一篇</span>
+					</span>
+				</a>
+			</div>
+			
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/2024/05/18/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%99%BB%E5%BD%95%E5%92%8C%E6%94%AF%E4%BB%98%E6%B5%81%E7%A8%8B/">
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item">小程序登录和支付流程</span>
+						<span class="post-nav-item">下一篇</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
+					</span>
+				</a>
+			</div>
+			
+		</div>
+		
+
+
+		
+	</div>
+
+	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">目录</div>
+		<div class="page-title">UnoCSS学习总结</div>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%9C%A8-%E4%B8%BA%E4%BB%80%E4%B9%88%E5%BC%80%E5%A7%8B%E7%94%A8-UnoCSS%EF%BC%9F"><span class="nav-text">✨ 为什么开始用 UnoCSS？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%93%8C-%E4%BB%80%E4%B9%88%E6%98%AF-UnoCSS%EF%BC%9F"><span class="nav-text">📌 什么是 UnoCSS？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%9C%A8-%E6%A0%B8%E5%BF%83%E4%BC%98%E5%8A%BF"><span class="nav-text">✨ 核心优势</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%9A%80-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE"><span class="nav-text">🚀 安装与配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96%EF%BC%88%E4%BB%A5-Vite-%E9%A1%B9%E7%9B%AE%E4%B8%BA%E4%BE%8B%EF%BC%89"><span class="nav-text">1. 安装依赖（以 Vite 项目为例）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%B7%BB%E5%8A%A0%E6%8F%92%E4%BB%B6%E5%88%B0-vite-config-ts"><span class="nav-text">2. 添加插件到 vite.config.ts</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%88%9B%E5%BB%BA-uno-config-ts"><span class="nav-text">3. 创建 uno.config.ts</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%94%A7-%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E7%A4%BA%E4%BE%8B"><span class="nav-text">🔧 常用语法示例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8E%9F%E5%AD%90%E7%B1%BB%E5%86%99%E6%B3%95%EF%BC%88%E5%92%8C-Tailwind-%E7%B1%BB%E4%BC%BC%EF%BC%89"><span class="nav-text">原子类写法（和 Tailwind 类似）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7%E8%AF%AD%E6%B3%95%EF%BC%88%E9%9C%80%E8%A6%81-presetAttributify%EF%BC%89"><span class="nav-text">属性语法（需要 presetAttributify）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F%EF%BC%88shortcuts%EF%BC%89"><span class="nav-text">自定义快捷方式（shortcuts）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%93%8D%E5%BA%94%E5%BC%8F%E4%B8%8E%E4%BC%AA%E7%B1%BB%E6%94%AF%E6%8C%81"><span class="nav-text">响应式与伪类支持</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%A7%A0-%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%E4%B8%8E%E5%9C%BA%E6%99%AF"><span class="nav-text">🧠 使用心得与场景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%93%A6-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="nav-text">📦 常见问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Q1%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E6%B7%BB%E5%8A%A0%E7%9A%84%E7%B1%BB%E6%B2%A1%E6%9C%89%E7%94%9F%E6%95%88%EF%BC%9F"><span class="nav-text">Q1：为什么我添加的类没有生效？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q2%EF%BC%9A%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A2%9C%E8%89%B2%E6%88%96%E5%AD%97%E4%BD%93%EF%BC%9F"><span class="nav-text">Q2：如何添加自定义颜色或字体？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q3%EF%BC%9A%E5%92%8C-Tailwind-CSS-%E7%9B%B8%E6%AF%94%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%EF%BC%9F"><span class="nav-text">Q3：和 Tailwind CSS 相比如何选择？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%94%9A-%E6%80%BB%E7%BB%93"><span class="nav-text">🔚 总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%93%9A-%E6%8E%A8%E8%8D%90%E8%B5%84%E6%BA%90"><span class="nav-text">📚 推荐资源</span></a></li></ol>
+
+	</div>
+</div>
+	</div>
+	
+</div>
+			</div>
+
+			
+		</div>
+
+		<div class="main-content-footer">
+			<footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2023</span>
+              -
+            
+            2025&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">郭浪</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        共撰写了 19 篇文章
+                    </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">访问人数</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">总访问量</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">由 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a> 驱动</span>
+            <span class="text-sm lg:block">主题&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.8.2</a></span>
+        </div>
+        
+        
+            <div>
+                博客已运行 <span class="odometer" id="runtime_days" ></span> 天 <span class="odometer" id="runtime_hours"></span> 小时 <span class="odometer" id="runtime_minutes"></span> 分钟 <span class="odometer" id="runtime_seconds"></span> 秒
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+		</div>
+	</div>
+
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		<!-- TOC aside toggle -->
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
+
+		<!-- go comment -->
+		
+	</ul>
+</div>
+	</div>
+	
+
+	<div class="right-side-tools-container">
+		<div class="side-tools-container">
+	<ul class="hidden-tools-list">
+		<li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-plus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-minus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+			<i class="fa-regular fa-moon"></i>
+		</li>
+
+		<!-- rss -->
+		
+
+		
+
+		<li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+			<i class="fa-regular fa-arrow-down"></i>
+		</li>
+	</ul>
+
+	<ul class="visible-tools-list">
+		<li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+			<i class="fa-regular fa-cog fa-spin"></i>
+		</li>
+		
+		<li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+			<i class="arrow-up fas fa-arrow-up"></i>
+			<span class="percent"></span>
+		</li>
+		
+		
+	</ul>
+</div>
+	</div>
+
+	<div class="image-viewer-container">
+	<img src="">
+</div>
+
+	
+
+</main>
+
+
+
+<script src="/js/build/libs/Swup.min.js"></script>
+
+<script src="/js/build/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/js/build/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+	
+<script src="/js/build/tools/imageViewer.js" type="module"></script>
+
+<script src="/js/build/utils.js" type="module"></script>
+
+<script src="/js/build/main.js" type="module"></script>
+
+<script src="/js/build/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/js/build/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/js/build/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/js/build/layouts/categoryList.js" type="module"></script>
+
+
+
+
+
+    
+<script src="/js/build/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/build/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/build/tools/runtime.js"></script>
+
+    
+<script src="/js/build/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/js/build/libs/Typed.min.js"></script>
+
+  
+<script src="/js/build/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+
+
+    
+<script src="/js/build/libs/anime.min.js"></script>
+
+
+
+
+
+    
+<script src="/js/build/tools/tocToggle.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/build/layouts/toc.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/build/plugins/tabs.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+<script src="/js/build/libs/moment-with-locales.min.js" data-swup-reload-script=""></script>
+
+
+<script src="/js/build/layouts/essays.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+
+	
+</body>
+
+</html>
